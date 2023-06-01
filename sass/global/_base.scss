@@ -1,0 +1,64 @@
+@use 'color' as *;
+@use 'mixin' as *;
+
+// ================================
+// タグ、ボタン、見出しなど共通して使うもの
+// ================================
+
+// --- 横幅 ---
+.inner {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+// --- 共通 ---
+body {
+
+    @include mq(tb) {
+        max-width: 192rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @include mq(pc) {
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+// --- 表示・非表示切り替え ---
+.pc_only {
+    display: none;
+
+    @include mq(tb) {
+        display: inline-block;
+    }
+}
+
+.sp_only {
+    display: inline-block;
+
+    @include mq(tb) {
+        display: none;
+    }
+}
+
+
+// --- ボタン ---

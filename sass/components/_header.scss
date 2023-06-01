@@ -1,0 +1,16 @@
+@use '../global' as *;
+
+// --- ヘッダー ここから ---
+h1 {
+    background-color: pink;
+
+    @include mq(tb) {
+        background-color: lightseagreen;
+    }
+
+    @include mq(pc) {
+        background-color: lightyellow;
+    }
+}
+
+// --- ヘッダー ここまで ---
