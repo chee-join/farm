@@ -41,30 +41,33 @@
 
 <body>
     <header>
+        <!-- スマホヘッダー -->
         <div class="sp__header">
             <div class="sp__inner-01">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="hanbergur-circle">
+                    <div class="hanbergur-inner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <h1>
+                <div class="sp__header-heading">
                     <span>あなたは知ってる？</span>
                     <span>蓼科を丸ごと味わう</span>
                     <span>喜びを</span>
-                </h1>
+                </div>
             </div>
             <div class="sp__inner-02">
-                <div class="sp__inner-cow">
-                    <img src="./asset/image/logo_cow.svg" alt="蓼科ごとう農園">
-                    <img src="./asset/image/logo_name.svg" alt="蓼科ごとう農園">
+                <div class="sp__logo">
+                    <div class="sp__logo-cow">
+                        <img src="./asset/image/logo_cow.svg" alt="蓼科ごとう農園">
+                    </div>
+                    <div class="sp__logo-name">
+                        <img src="./asset/image/logo_name.svg" alt="蓼科ごとう農園">
+                        <img src="./asset/image/logo_en.svg" alt="Tateshina Gotou Farm">
+                    </div>
                 </div>
-
             </div>
-
-
-
-
             <!-- ハンバーガーボタンを押したら右からスライドイン -->
             <nav class="hamburger__menu">
                 <ul class="hamburger__menu-item">
@@ -77,10 +80,90 @@
                 </ul>
             </nav>
         </div>
+        <!-- PCヘッダー -->
+        <div class="pc__header">
+            <div class="pc__header-inner">
+                <h1 class="pc__header-heading">
+                    <span>あなたは知ってる？</span>
+                    <span>蓼科を丸ごと味わう</span>
+                    <span>喜びを</span>
+                </h1>
+            </div>
+
+            <nav class="pc__nav">
+                <div class="pc__logo-cow">
+                    <img src="./asset/image/logo_cow.svg" alt="蓼科ごとう農園">
+                </div>
+                <div class="pc__nav-inner">
+                    <ul class="pc__nav-left">
+                        <li class=""><a href="#">この農園について</a></li>
+                        <li class=""><a href="#">製品一覧</a></li>
+                        <li class=""><a href="#">お知らせ</a></li>
+                    </ul>
+                    <h2 class="pc__logo-name">
+                        <img src="./asset/image/logo_name.svg" alt="蓼科ごとう農園">
+                        <img src="./asset/image/logo_en.svg" alt="Tateshina Gotou Farm">
+                    </h2>
+                    <ul class="pc__nav-right">
+                        <li class=""><a href="#">FAQ</a></li>
+                        <li class=""><a href="#">アクセス</a></li>
+                        <li class=""><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <h1>Sample</h1>
-    <h2>h2の見出し</h2>
-    <h3>h3の見出し</h3>
+
+    <!-- 蓼科の生きた豊かな恵みを… -->
+    <section class="intro">
+        <div class="intro__wrapper-01">
+            <img src="./asset/image/img_01.jpg" alt="子供が牛にご飯をあげているところ">
+            <div class="intro__inner">
+                <h3 class="intro__heading">
+                    <span>蓼科の生きた豊かな恵みを、<br class="sp_only">そのままに</span>
+                </h3>
+                <p class="intro_desc">「蓼科ごとう農園」は、蓼科の新鮮な農産物を提供するだけでなく、<br>
+                    蓼科の自然環境を大切に守り、後世に残すことを使命としています。<br>
+                    私たちは、農業に従事する者として、<br>
+                    土地や水、空気といった自然環境がもたらす恩恵に感謝し、<br>
+                    その恩恵を受け継ぐ未来の世代にも、<br>
+                    同じような恩恵を受け継ぐことができるよう、<br>
+                    最善を尽くしています。<br>
+                    そのため、私たちは有機農法を導入し、<br>
+                    化学肥料や農薬を極力使用しない栽培方法を取り入れています。<br>
+                    また、自然災害に備え、耕作放棄地の再生や山の植林活動など、<br>
+                    地域の環境保全活動にも積極的に参加しています。<br>
+                    私たちは、「蓼科ごとう農園」を通じて、<br>
+                    蓼科の美しい自然を末永く守り、<br>
+                    地域の豊かな暮らしを支えることを目指しています。
+                </p>
+            </div>
+        </div>
+        <div class="intro__wrapper-02">
+            <img src="./asset/image/img_02.jpg" alt="牛が牧草を食べているところ">
+        </div>
+    </section>
+    <!-- 製品一覧 -->
+    <section class="product">
+        <h4 class="product__heading">製品一覧</h4>
+    </section>
+    <!-- FAQ -->
+    <section class="info">
+        <h4 class="info__heading">FAQ</h4>
+        <div class="swiper-wrapper">
+            <div class="swiper"></div>
+        </div>
+    </section>
+    <!-- アクセス -->
+    <section class="access">
+        <h4 class="access__heading">アクセス</h4>
+    </section>
+    <!-- お問い合わせ -->
+    <section class="contact">
+        <h4 class="contact__heading">お問い合わせ</h4>
+    </section>
+
+
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
