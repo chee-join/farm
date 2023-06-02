@@ -17,7 +17,7 @@ $breakpoints: (
     sp: "only screen and (min-width: 576px)",
     tb: "only screen and (min-width: 768px)",
     pc: "only screen and (min-width: 992px)",
-    pg: "only screen and (min-width: 1200px)",
+    pg: "only screen and (min-width: 1280px)",
 );
 
 @mixin mq($breakpoint) {
@@ -26,63 +26,41 @@ $breakpoints: (
     }
 }
 
-/*sp*/
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 575px) {
     html {
-        font-size: 1.3vw;
+        font-size: 1.739vw;
     }
 }
 
-/*tb*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     html {
-        font-size: 1.73vw;
+        font-size: 1.302vw;
     }
 }
 
-/*PC*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
     html {
         font-size: 1vw;
     }
 }
 
-/*pg pcbig*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    html {
+        font-size: .78vw;
+    }
+}
+@media screen and (min-width: 1280px) {
     html {
         font-size: 16px;
     }
 }
 
 
-
-
-// @media screen and (max-width: 750.9px) {
-//     html {
-//         font-size: 1.33vw;
-//     }
-// }
-
-
-/*pc*/
-// @media screen and (min-width: 751px)and (max-width: 1919.9px) {
-//     html {
-//         font-size: 0.52vw;
-//     }
-// }
-
-// @media screen and (min-width: 1920px) {
-//     html {
-//         font-size: 16px;
-//     }
-// }
-
 // --- フォントの指定 ---
-
-// @mixin font-poppins {
-//     font-family: 'Poppins', sans-serif;
-//     font-weight: 700;
-// }
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
 
 // --- 余白設定 ---
 $padding_pc: 25px;

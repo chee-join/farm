@@ -12,18 +12,6 @@
 }
 
 // --- 共通 ---
-body {
-
-    @include mq(tb) {
-        max-width: 192rem;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    @include mq(pc) {
-    }
-}
-
 * {
     box-sizing: border-box;
 }
@@ -39,7 +27,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #4E301B;
     cursor: pointer;
 }
 
@@ -59,6 +47,4 @@ a {
         display: none;
     }
 }
-
-
-// --- ボタン ---
+// --- 見出し ---
