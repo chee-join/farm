@@ -52,4 +52,7 @@ a {
 .product__heading,
 .info__heading,
 .access__heading,
-.contact__heading {}
+.contact__heading {
+    font-size: 3.2rem;
+    line-height: calc(42 / 32);
+}

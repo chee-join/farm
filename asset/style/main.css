@@ -72,3 +72,11 @@ a {
     display: none;
   }
 }
+
+.product__heading,
+.info__heading,
+.access__heading,
+.contact__heading {
+  font-size: 3.2rem;
+  line-height: 1.3125;
+}
