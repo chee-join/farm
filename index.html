@@ -150,7 +150,10 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="swiper__inner">
-                        <div class="swiper__image"><img src="./asset/image/swiper_img01.jpg" alt=""></div>
+                        <figure class="swiper__image">
+                            <img src="./asset/image/swiper_img01.jpg"
+                                alt="「あいまりん」「サマープリンセス」「サマーリリカル」「よつぼし」など詰め合わせ10パック">
+                        </figure>
                         <p class="swiper__text">
                             「あいまりん」「サマープリンセス」「サマーリリカル」「よつぼし」など詰め合わせ10パック</p>
                         <p class="swiper__price">￥&nbsp;4,800（税込</p>
@@ -233,20 +236,108 @@
         <div class="form__wrapper">
             <h5 class="form__title">お問い合わせメールフォーム</h5>
             <form action="POST">
-                <ul class="form__inner">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="form__item">
+                    <li class="form__list">
+                        <div class="form__label">
+                            <label for="name">お問い合わせ種類</label>
+                            <span class="required">必須</span>
+                        </div>
+                        <ul class="inquiry__item">
+                            <li class="inquiry__list">
+                                <input type="radio" class="radio__btn" name="inquiry__type" id="about-products">
+                                <label for="about-products">弊社製品について</label>
+                            </li>
+                            <li class="inquiry__list">
+                                <input type="radio" class="radio__btn" name="inquiry__type" id="about-events">
+                                <label for="about-events">いちご狩りについて</label>
+                            </li>
+                            <li class="inquiry__list">
+                                <input type="radio" class="radio__btn" name="inquiry__type" id="about-others">
+                                <label for="about-others">その他のお問い合わせ</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="form__list">
+                        <div class="form__label">
+                            <label for="name">お名前</label>
+                            <span class="required">必須</span>
+                        </div>
+                        <div class="form__input">
+                            <input type="text" class="text__box-01" id="name">
+                        </div>
+                    </li>
+                    <li class="form__list">
+                        <div class="form__label">
+                            <label for="post-number">郵便番号</label>
+                            <span class="required">必須</span>
+                        </div>
+                        <div class="form__input">
+                            <input type="text" class="text__box-02" id="post-number">
+                        </div>
+                    </li>
+                    <li class="form__list">
+                        <div class="form__label">
+                            <label for="address-text">ご住所</label>
+                            <span class="required">必須</span>
+                        </div>
+                        <div class="form__input">
+                            <input type="text" class="text__box-01" id="address-text">
+                        </div>
+                    </li>
+                    <li class="form__list">
+                        <div class="form__label">
+                            <label for="email">メールアドレス</label>
+                            <span class="required">必須</span>
+                        </div>
+                        <div class="form__input">
+                            <input type="email" class="text__box-01" id="email">
+                        </div>
+                    </li>
+                    <li class="form__list">
+                        <div class="form__label">
+                            <label for="phone-number">電話番号</label>
+                            <span class="required">必須</span>
+                        </div>
+                        <div class="form__input">
+                            <input type="text" class="text__box-01" id="phone-number">
+                        </div>
+                    </li>
+                    <li class="form__list">
+                        <div class="form__label">
+                            <label for="details">お問い合わせ内容</label>
+                            <span class="required">必須</span>
+                        </div>
+                        <div class="form__input">
+                            <textarea name="details" id="details" class="textarea" cols="30" rows="10"></textarea>
+                        </div>
+                    </li>
                 </ul>
+                <div class="submit-wrapper">
+                    <input type="submit" value="送信する" class="submit-btn">
+                </div>
             </form>
         </div>
-
-
     </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer__logo">
+            <img src="./asset/image/logo_cow.svg" alt="蓼科ごとう農園">
+            <img src="./asset/image/logo_name.svg" alt="蓼科ごとう農園">
+            <img src="./asset/image/logo_en.svg" alt="Tateshina Gotou Farm">
+        </div>
+        <ul class="footer__nav">
+            <li class=""><a href="#">この農園について</a></li>
+            <li class=""><a href="#">製品一覧</a></li>
+            <li class=""><a href="#">お知らせ</a></li>
+            <li class=""><a href="#">FAQ</a></li>
+            <li class=""><a href="#">アクセス</a></li>
+            <li class=""><a href="#">お問い合わせ</a></li>
+        </ul>
+        <div class="copyright">
+            <small>&copy;&nbsp;2019&nbsp;GOTONOUEN.</small>
+        </div>
+    </footer>
 
 
 
