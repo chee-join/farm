@@ -1,6 +1,51 @@
 @use '../global' as *;
 
 // --- 製品一覧 ここから ---
+.product {
+    width: 100%;
+    background-color: $main_bg;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.product__wrapper {
+    margin-top: 4rem;
+}
+
+.swiper {}
+
+.swiper-wrapper {
+
+}
+
+.swiper-slide {}
+
+.swiper__inner {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    max-width: 26.4rem;
+}
+
+
+.swiper__image {}
+
+.swiper__text {
+    padding: 11px;
+    min-height: 16.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.swiper__desc {
+    font-size: 1.6rem;
+}
+
+.swiper__price {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
 
 
 // --- 製品一覧 ここまで ---

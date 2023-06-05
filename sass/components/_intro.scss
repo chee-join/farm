@@ -1,6 +1,122 @@
 @use '../global' as *;
 
 // --- 蓼科の生きた… ここから ---
+.intro {
+    background-color: $main_bg;
+    width: 100%;
+    padding-top: 2.4rem;
+}
 
+.intro__img01 {
+    display: block;
+    border-radius: 80px;
+    width: 80%;
+    margin-left: auto;
+
+    @include mq(tb) {
+        width: 76.8rem;
+        border-radius: 15rem;
+        margin-left: auto;
+    }
+
+    @include mq(pg) {
+        width: 768px;
+        border-radius: 150px;
+        margin-left: auto;
+    }
+}
+
+.intro__wrapper {
+    @include mq(pg) {
+        max-width: 1280px;
+        padding-right: 43px;
+        padding-left: 178px;
+        margin: 0 auto;
+    }
+}
+
+.intro__heading {
+    margin-top: -25rem;
+
+    @include mq(tb) {
+        margin-top: -45.5rem;
+    }
+
+    @include mq(pg) {
+        margin-top: -455px;
+    }
+
+}
+
+.intro__heading span {
+    font-size: 2.8rem;
+    color: $heading_h2;
+    line-height: 1;
+    display: inline-block;
+    padding: .7rem;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+
+    @include mq(tb) {
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    @include mq(pg) {
+        font-size: 40px;
+    }
+}
+
+.intro__heading span:first-child {
+    margin-top: 0;
+}
+
+.intro_desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #857868;
+    width: 50rem;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 1;
+
+    @include mq(tb) {
+        width: 52.6rem;
+        font-size: 1.6rem;
+        line-height: calc(40 / 16);
+        padding: 1.5rem;
+        margin-top: 3.7rem;
+    }
+
+    @include mq(pg) {
+        width: 526px;
+        font-size: 16px;
+        padding: 15px;
+        margin-top: 37px;
+    }
+}
+
+.intro__img02 {
+    display: block;
+    border-radius: 5rem;
+    width: 60%;
+    margin-left: auto;
+    margin-top: -8rem;
+
+    @include mq(tb) {
+        width: 39.3rem;
+        margin-top: -19.8rem;
+    }
+
+    @include mq(pg) {
+        border-radius: 50px;
+        width: 393px;
+        margin-left: auto;
+        margin-top: -198px;
+    }
+}
 
 // --- 蓼科の生きた… ここまで ---

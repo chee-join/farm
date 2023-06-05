@@ -1,6 +1,395 @@
 @use '../global' as *;
 
 // --- ヘッダー ここから ---
+/*スマホ・タブレット ヘッダー*/
+.header {
+    width: 100%;
+}
+
+.sp__header {
+    position: relative;
+    z-index: 1;
+
+    @include mq(tb) {
+        display: none;
+    }
+
+}
+
+.sp__inner-01 {
+    width: 100%;
+    height: auto;
+    background-image: url(../../asset/image/mv_sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: -1;
+}
+
+.hamburger-circle {
+    width: 48px;
+    height: 48px;
+    background-color: $yellow;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    margin-left: auto;
+    cursor: pointer;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+.hamburger-circle span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #4E301B;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:nth-child(1) {
+        top: 25%;
+    }
+
+    &:nth-child(2) {
+        top: 45%;
+    }
+
+    &:nth-child(3) {
+        top: 65%;
+    }
+}
+
+.hamburger-circle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 45%;
+    left: 35%;
+}
+
+.hamburger-circle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-circle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 45%;
+    left: 35%;
+}
+
+.sp__header-heading {
+    padding: 42.3rem 0 11.8rem 3.3rem;
+}
+
+.sp__header-heading span {
+    font-size: 2.4rem;
+    line-height: 1;
+    display: inline-block;
+    padding: .7rem;
+    margin-top: .6rem;
+    background-color: #fff;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+.sp__inner-02 {
+    background-color: $main_bg;
+
+}
+
+.sp__logo {
+    display: grid;
+    place-items: center;
+}
+
+.sp__logo-cow {
+    padding: 2rem;
+    width: 15.4rem;
+    height: 15.4rem;
+    border-radius: 50%;
+    background-color: $main_bg;
+    margin: -7rem auto 0;
+}
+
+.sp__logo-name {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.logo_ja {
+    display: block;
+    width: 27.5rem;
+    margin: 0 auto;
+}
+
+.logo_en {
+    display: block;
+    width: 14.2rem;
+    margin: 1rem auto 0;
+}
+
+/*ハンバーガーメニュー 右からメニューページがスライドイン*/
+#slide-in {
+    background-color: rgba(255, 255, 255, .9);
+    text-align: center;
+    padding-top: 6.1rem;
+    width: 100%;
+    height: 100vh;
+    transition: transform .3s ease-in-out;
+
+    position: fixed;
+    top: 0;
+    right: -120%;
+    z-index: 10;
+}
+
+/*panelactiveがついたら位置を変更right0*/
+#slide-in.panelactive {
+    right: 0;
+}
+
+.slide-in-cow {
+    width: 5.5rem;
+    display: inline-block;
+}
+
+.slide-in-name {
+    margin-top: 10px;
+
+    .logo_ja {
+        width: 28rem;
+    }
+
+    .logo_en {
+        width: 14.3rem;
+    }
+}
+
+.hamburger__menu {
+    margin-top: 5rem;
+}
+
+// .hamburger__menu-item {}
+
+.hamburger__menu-list {
+    margin-top: 16px;
+}
+
+.hamburger__menu-list:first-child {
+    margin-top: 0;
+}
+
+.hamburger__menu-list a {
+    font-size: 14px;
+}
+
+#js-top-nav.open {
+    right: 0;
+}
+
+/*PCヘッダー*/
+
+.pc__header {
+    display: none;
+
+    @include mq(tb) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.pc__header-inner {
+    @include mq(tb) {
+        width: 100%;
+        height: 85.4rem;
+        background-image: url(../../asset/image/fv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @include mq(pg) {
+        height: 854px;
+    }
+}
+
+.pc__header-heading {
+    @include mq(tb) {
+        text-align: right;
+        padding-top: 8.75%;
+        padding-right: 11.41%;
+    }
+
+}
+
+.pc__header-heading span {
+    @include mq(tb) {
+        writing-mode: vertical-rl;
+        font-size: 3.2rem;
+        line-height: 1;
+        display: inline-block;
+        background-color: #fff;
+        letter-spacing: .42em;
+        padding: 1rem 1.5rem .5rem;
+    }
+
+    @include mq(pg) {
+        font-size: 32px;
+        display: inline-block;
+        padding: 10px 15px 5px;
+    }
+}
+
+.pc__nav {
+    @include mq(tb) {
+        background-color: $main_bg;
+        padding-bottom: 2rem;
+    }
+
+    @include mq(pg) {
+        padding-bottom: 20px;
+    }
+}
+
+.pc__logo-cow {
+    @include mq(tb) {
+        display: grid;
+        place-items: center;
+    }
+}
+
+.pc__logo-inner {
+    @include mq(tb) {
+        padding: 2.9rem;
+        background-color: $main_bg;
+        border-radius: 50%;
+        margin-top: -8rem;
+    }
+
+    @include mq(pg) {
+        padding: 29px;
+        margin-top: -80px;
+    }
+}
+
+.pc__logo-cow-img {
+    @include mq(tb) {
+        width: 9.6rem;
+    }
+
+    @include mq(pg) {
+        width: 96px;
+    }
+}
+
+.pc__nav-inner {
+
+    @include mq(tb) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include mq(pc) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 11.7rem;
+        padding-right: 18.1rem;
+    }
+
+    @include mq(pg) {
+        padding-left: 117px;
+        padding-right: 181px;
+    }
+}
+
+.pc__nav-left {
+    @include mq(pc) {
+        display: flex;
+        gap: 3.9rem;
+    }
+
+    @include mq(pg) {
+        gap: 39px;
+    }
+}
+
+.pc__nav-list {
+    @include mq(tb) {
+        margin-top: 1rem;
+    }
+
+    @include mq(pc) {
+        margin-top: 0;
+    }
+}
+
+.pc__nav-list a {
+    @include mq(tb) {
+        font-size: 1.6rem;
+    }
+
+
+    @include mq(pg) {
+        font-size: 16px;
+    }
+}
+
+.pc__logo-name {
+    @include mq(tb) {
+        text-align: center;
+        margin-left: 4.9rem;
+        margin-right: 5.3rem;
+    }
+
+    @include mq(pg) {
+        margin-left: 49px;
+        margin-right: 53px;
+    }
+}
+
+.pc__logo-ja {
+    @include mq(tb) {
+        display: block;
+        width: 27.5rem;
+    }
+
+    @include mq(pg) {
+        width: 275px;
+    }
+}
+
+.pc__logo-en {
+    @include mq(tb) {
+        display: inline-block;
+        width: 14.2rem;
+        margin-top: 1.1rem;
+    }
+
+    @include mq(pg) {
+        width: 142px;
+        margin-top: 11px;
+    }
+}
+
+.pc__nav-right {
+    @include mq(pc) {
+        display: flex;
+        gap: 3.9rem;
+    }
+
+    @include mq(pg) {
+        gap: 39px;
+    }
+}
+
 
 
 // --- ヘッダー ここまで ---
