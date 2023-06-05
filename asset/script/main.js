@@ -10,20 +10,25 @@ $(function () {
         $("#slide-in").removeClass('panelactive');
     });
 
-    $("#slide-in.panelactive").on('click',function(){
-        console.log('click');
-        $(this).removeClass('panelactive');
-    });
 });
-
-
-// panelactiveで開いたページを一定時間表示する
-// 何もクリックされなかったら
-// panelactiveを外す(ページを閉じる)
 
 /*swiper製品一覧*/
 const swiper = new Swiper(".swiper", {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1.5,
+    spaceBetween: 40,
+    autoplay: {
+        delay: 5000 //5秒ごとにスライダを切り替える
+    },
+    speed: 1000,
 
+    breakpoints: {
+        768: {
+            slidesPerView: 3.8,
+            loop: true,
+        },
+    },
 
 });
 

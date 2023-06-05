@@ -6,44 +6,67 @@
     background-color: $main_bg;
     padding-top: 6rem;
     padding-bottom: 3rem;
+
+    @include mq(tb) {
+        padding-top: 6rem;
+        padding-bottom: 9.4rem;
+    }
+
+    @include mq(pg) {
+        padding-top: 60px;
+        padding-bottom: 94px;
+    }
 }
 
 .product__wrapper {
     margin-top: 4rem;
+
+    @include mq(tb) {
+        margin-top: 9.4rem;
+    }
+
+    @include mq(pg) {
+        margin-top: 94px;
+    }
 }
-
-.swiper {}
-
-.swiper-wrapper {
-
-}
-
-.swiper-slide {}
 
 .swiper__inner {
     background: #FFFFFF;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    max-width: 26.4rem;
 }
 
-
-.swiper__image {}
-
 .swiper__text {
-    padding: 11px;
+    padding: 1.6rem;
     min-height: 16.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include mq(tb) {
+        min-height: 16.5rem;
+    }
+
+    @include mq(pg) {
+        min-height: 165px;
+    }
 }
 
 .swiper__desc {
     font-size: 1.6rem;
+    line-height: calc(24 /16);
+
+    @include mq(pg) {
+        font-size: 16px;
+    }
 }
 
 .swiper__price {
     font-size: 1.6rem;
     font-weight: 400;
+
+    @include mq(pg) {
+        font-size: 16px;
+    }
 }
 
 
