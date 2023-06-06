@@ -2,5 +2,249 @@
 
 // --- お問い合わせ ここから ---
 
+/*input,textareaのリセット*/
+input,
+textarea {
+    resize: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.contact {
+    width: 100%;
+    background-color: $main_bg;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+
+
+    @include mq(tb) {
+        padding-top: 10.4rem;
+    }
+
+    @include mq(pg) {
+        padding-top: 104px;
+        padding-bottom: 30px;
+    }
+}
+
+.contact__lead {
+    margin-top: 4rem;
+    font-size: 16px;
+    text-align: center;
+
+    @include mq(tb) {
+        margin-top: 6.7rem;
+        font-size: 1.8rem;
+    }
+
+    @include mq(pg) {
+        margin-top: 67px;
+        font-size: 18px;
+    }
+
+}
+
+.form__wrapper {
+    margin-top: 4.2rem;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 37px 16px 14px;
+
+    @include mq(tb) {
+        margin-top: 9.3rem;
+    }
+
+    @include mq(pg) {
+        margin-top: 93px;
+    }
+}
+
+.form__title {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include mq(tb) {
+        font-size: 1.6rem;
+    }
+
+    @include mq(pg) {
+        font-size: 16px;
+    }
+}
+
+.form__item {
+    @include mq(tb) {}
+
+    @include mq(pg) {
+        margin-top: 24px;
+    }
+}
+
+.form__list {
+    margin-top: 32px;
+
+    @include mq(tb) {
+        margin-top: 2.4rem;
+    }
+
+    @include mq(pg) {
+        margin-top: 24px;
+    }
+}
+
+.form__list:first-child {
+    margin-top: 0;
+}
+
+.form__label {
+    font-size: 14px;
+
+    @include mq(tb) {
+        font-size: 1.6rem;
+    }
+
+    @include mq(pg) {
+        font-size: 16px;
+    }
+}
+
+.required {
+    background-color: $yellow;
+    border-radius: 8px;
+    padding: 3px 6px;
+    font-size: 12px;
+
+    @include mq(tb) {
+        border-radius: 1rem;
+        padding: .5rem 1.1rem;
+        font-size: 1.4rem;
+    }
+
+    @include mq(pg) {
+        border-radius: 10px;
+        padding: 5px 11px;
+        font-size: 14px;
+    }
+}
+
+.inquiry__item {
+    margin-top: 10px;
+    padding-left: 20px;
+
+    @include mq(tb) {}
+
+    @include mq(pg) {}
+}
+
+.inquiry__list {
+    margin-top: 5px;
+    font-size: 14px;
+
+    @include mq(tb) {}
+
+    @include mq(pg) {}
+
+}
+
+.inquiry__list:first-child {
+    margin-top: 0;
+}
+
+
+.radio__btn {
+    width: 16px;
+    height: 16px;
+    border: solid 1px #4E301B;
+    border-radius: 50%;
+    /*上下の位置調整*/
+    vertical-align: -4px;
+
+    @include mq(tb) {}
+
+    @include mq(pg) {}
+
+}
+
+.radio__btn:checked {
+
+    background-color: #fff;
+    border: 6px solid #4E301B;
+    box-shadow: 0 0 0 1px #fff;
+
+}
+
+.radio__btn:hover,
+.submit__btn:hover {
+    cursor: pointer;
+}
+
+.form__input {
+    margin-top: 8px;
+
+    @include mq(tb) {}
+
+    @include mq(pg) {}
+
+}
+
+.text__box-01,
+.text__box-02,
+.textarea {
+    background-color: #EFEAE6;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+
+    @include mq(tb) {}
+
+    @include mq(pg) {}
+
+}
+
+.text__box-02 {
+    width: 50%;
+
+    @include mq(tb) {}
+
+    @include mq(pg) {}
+
+}
+
+.textarea {
+    line-height: 1.8;
+    height: 12em;
+
+    @include mq(tb) {}
+
+    @include mq(pg) {}
+}
+
+.submit__wrapper {
+    margin-top: 4rem;
+
+    @include mq(tb) {
+        margin-top: 5rem;
+    }
+
+    @include mq(pg) {
+        margin-top: 50px;
+    }
+
+}
+
+.submit__btn {
+    font-size: 14px;
+    padding: 13px;
+    @include mq(tb) {}
+
+    @include mq(pg) {}
+}
+
+
 
 // --- お問い合わせ ここまで ---
