@@ -1,6 +1,113 @@
 @use '../global' as *;
 
 // --- FAQ ここから ---
+.faq {
+    width: 100%;
+    background-color: $main_bg;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
+    @include mq(tb) {
+        padding-top: 9.1rem;
+        padding-bottom: 9.1rem;
+    }
+
+    @include mq(pg) {
+        padding-top: 91px;
+        padding-bottom: 91px;
+    }
+}
+
+.faq__wrapper {
+    margin-top: 3.6rem;
+
+    @include mq(tb) {
+        margin-top: 7.3rem;
+    }
+
+    @include mq(pg) {
+        margin-top: 73px;
+    }
+}
+
+.faq__inner {
+    max-width: 90%;
+    margin: 0 auto;
+
+    @include mq(tb) {
+        max-width: 74rem;
+    }
+
+    @include mq(pg) {
+        max-width: 740px;
+    }
+}
+
+.faq__q {
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: calc(26 / 18);
+    padding: 1.2rem 1.4rem 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 3.1rem;
+
+    @include mq(tb) {
+        font-size: 1.8rem;
+        padding: .8rem 1.4rem;
+    }
+
+    @include mq(pg) {
+        font-size: 18px;
+        padding: 8px 14px;
+        margin-top: 31px;
+    }
+}
+
+.faq__q:first-child {
+    margin-top: 0
+}
+
+.faq__q-q {
+    @include font-roboto;
+    font-size: 2.4rem;
+    display: inline-block;
+    margin-right: 8px;
+
+    @include mq(pg) {
+        font-size: 24px;
+    }
+}
+
+.open-icon {
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    background-image: url(../../asset/image/down.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+}
+
+.faq__a {
+    margin-top: 2.4rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(24 / 16);
+
+    @include mq(pg) {
+        margin-top: 24px;
+    }
+}
+
+/*アコーディオン*/
+.js_a {
+    display: none;
+}
+
+.open-icon.active {
+    background-image: url(../../asset/image/up.png);
+}
 
 // --- FAQ ここまで ---

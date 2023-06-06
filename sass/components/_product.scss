@@ -5,16 +5,18 @@
     width: 100%;
     background-color: $main_bg;
     padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
+    position: relative;
+    z-index: -3;
 
     @include mq(tb) {
         padding-top: 6rem;
-        padding-bottom: 9.4rem;
+        padding-bottom: 8.8rem;
     }
 
     @include mq(pg) {
         padding-top: 60px;
-        padding-bottom: 94px;
+        padding-bottom: 88px;
     }
 }
 
@@ -29,10 +31,14 @@
         margin-top: 94px;
     }
 }
+.swiper {
+    z-index: -1;
+}
 
 .swiper__inner {
     background: #FFFFFF;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 6px;
 }
 
 .swiper__text {
@@ -68,7 +74,4 @@
         font-size: 16px;
     }
 }
-
-
-
 // --- 製品一覧 ここまで ---

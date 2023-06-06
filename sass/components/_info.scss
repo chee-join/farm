@@ -1,6 +1,66 @@
 @use '../global' as *;
 
 // --- お知らせ ここから ---
+.info {
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
+    @include mq(tb) {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+
+    @include mq(pg) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+
+.info__wrapper {
+    padding-top: 4rem;
+
+    @include mq(pg) {
+        padding-top: 40px;
+    }
+}
+
+.info__inner {
+    max-width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid #C6C6C6;
+    border-bottom: 1px solid #C6C6C6;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include mq(tb) {
+        max-width: 93.4rem;
+        padding-top: 2.2rem;
+        padding-bottom: 2.2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 12rem;
+    }
+
+    @include mq(pg) {
+        max-width: 934px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        gap: 120px;
+    }
+}
+
+.info__time {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.info__text {
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 // --- お知らせ ここまで ---

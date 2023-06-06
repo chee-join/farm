@@ -76,10 +76,20 @@ a {
 .product__heading,
 .info__heading,
 .access__heading,
-.contact__heading {
+.contact__heading,
+.faq__heading {
   font-size: 3.2rem;
   line-height: 1.3125;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .product__heading,
+  .info__heading,
+  .access__heading,
+  .contact__heading,
+  .faq__heading {
+    font-size: 32px;
+  }
 }
 
 /*スマホ・タブレット ヘッダー*/
@@ -602,18 +612,20 @@ a {
   width: 100%;
   background-color: #FDF9EF;
   padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
+  position: relative;
+  z-index: -3;
 }
 @media only screen and (min-width: 768px) {
   .product {
     padding-top: 6rem;
-    padding-bottom: 9.4rem;
+    padding-bottom: 8.8rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .product {
     padding-top: 60px;
-    padding-bottom: 94px;
+    padding-bottom: 88px;
   }
 }
 
@@ -631,9 +643,14 @@ a {
   }
 }
 
+.swiper {
+  z-index: -1;
+}
+
 .swiper__inner {
   background: #FFFFFF;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 6px;
 }
 
 .swiper__text {
@@ -672,4 +689,191 @@ a {
   .swiper__price {
     font-size: 16px;
   }
+}
+
+.info {
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media only screen and (min-width: 768px) {
+  .info {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .info {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.info__wrapper {
+  padding-top: 4rem;
+}
+@media only screen and (min-width: 1280px) {
+  .info__wrapper {
+    padding-top: 40px;
+  }
+}
+
+.info__inner {
+  max-width: 90%;
+  margin: 0 auto;
+  border-top: 1px solid #C6C6C6;
+  border-bottom: 1px solid #C6C6C6;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .info__inner {
+    max-width: 93.4rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .info__inner {
+    max-width: 934px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    gap: 120px;
+  }
+}
+
+.info__time {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.info__text {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.faq {
+  width: 100%;
+  background-color: #FDF9EF;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media only screen and (min-width: 768px) {
+  .faq {
+    padding-top: 9.1rem;
+    padding-bottom: 9.1rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .faq {
+    padding-top: 91px;
+    padding-bottom: 91px;
+  }
+}
+
+.faq__wrapper {
+  margin-top: 3.6rem;
+}
+@media only screen and (min-width: 768px) {
+  .faq__wrapper {
+    margin-top: 7.3rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .faq__wrapper {
+    margin-top: 73px;
+  }
+}
+
+.faq__inner {
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .faq__inner {
+    max-width: 74rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .faq__inner {
+    max-width: 740px;
+  }
+}
+
+.faq__q {
+  width: 100%;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 1.4444444444;
+  padding: 1.2rem 1.4rem 1rem;
+  display: flex;
+  align-items: center;
+  margin-top: 3.1rem;
+}
+@media only screen and (min-width: 768px) {
+  .faq__q {
+    font-size: 1.8rem;
+    padding: 0.8rem 1.4rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .faq__q {
+    font-size: 18px;
+    padding: 8px 14px;
+    margin-top: 31px;
+  }
+}
+
+.faq__q:first-child {
+  margin-top: 0;
+}
+
+.faq__q-q {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 8px;
+}
+@media only screen and (min-width: 1280px) {
+  .faq__q-q {
+    font-size: 24px;
+  }
+}
+
+.open-icon {
+  display: inline-block;
+  width: 16px;
+  height: 10px;
+  background-image: url(../../asset/image/down.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: auto;
+}
+
+.faq__a {
+  margin-top: 2.4rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 1280px) {
+  .faq__a {
+    margin-top: 24px;
+  }
+}
+
+/*アコーディオン*/
+.js_a {
+  display: none;
+}
+
+.open-icon.active {
+  background-image: url(../../asset/image/up.png);
 }

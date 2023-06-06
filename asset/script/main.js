@@ -32,3 +32,11 @@ const swiper = new Swiper(".swiper", {
 
 });
 
+/*FAQ アコーディオン*/
+$(function () {
+    $('.js_q').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).find('.open-icon').toggleClass('active');
+    });
+});
+
