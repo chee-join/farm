@@ -877,3 +877,132 @@ a {
 .open-icon.active {
   background-image: url(../../asset/image/up.png);
 }
+
+.access {
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media only screen and (min-width: 768px) {
+  .access {
+    padding-top: 9rem;
+    padding-bottom: 7.8rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .access {
+    padding-top: 90px;
+    padding-bottom: 78px;
+  }
+}
+
+.access__wrapper {
+  width: 90%;
+  margin: 6rem auto 0;
+}
+@media only screen and (min-width: 768px) {
+  .access__wrapper {
+    width: 93.4rem;
+    margin: 9rem auto 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .access__wrapper {
+    width: 934px;
+    margin: 90px auto 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .access__date {
+    width: 45.9rem;
+    margin-right: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .access__date {
+    width: 459px;
+    margin-right: 32px;
+  }
+}
+
+.date__inner {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #C6C6C6;
+  border-bottom: 1px solid #C6C6C6;
+}
+@media only screen and (min-width: 1280px) {
+  .date__inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.date__title {
+  font-size: clamp(12px, 2.5vw, 1.8rem);
+  width: 8rem;
+}
+@media only screen and (min-width: 768px) {
+  .date__title {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .date__title {
+    font-size: 18px;
+    width: 80px;
+  }
+}
+
+.date__text {
+  font-size: clamp(12px, 2.5vw, 1.8rem);
+}
+@media only screen and (min-width: 768px) {
+  .date__text {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .date__text {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .access__map-wrapper {
+    max-width: 44.3rem;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .access__map-wrapper {
+    max-width: 443px;
+  }
+}
+
+.access__map {
+  margin-top: 4rem;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+}
+@media only screen and (min-width: 768px) {
+  .access__map {
+    margin-top: 0;
+  }
+}
+
+.access__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
