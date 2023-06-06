@@ -31,8 +31,14 @@
         margin-top: 94px;
     }
 }
+
 .swiper {
+    width: 100%;
     z-index: -1;
+}
+
+.swiper-slide {
+    width: 264px;
 }
 
 .swiper__inner {
@@ -53,6 +59,7 @@
     }
 
     @include mq(pg) {
+        padding: 16px;
         min-height: 165px;
     }
 }

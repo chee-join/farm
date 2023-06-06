@@ -1,6 +1,151 @@
 @use '../global' as *;
 
 // --- フッター ここから ---
+.footer {
+    margin-top: 25px;
+
+}
+
+.footer__inner {
+    width: 100%;
+    position: relative;
+}
+
+.footer__inner::before {
+    content: '';
+    position: absolute;
+    width: 20.7rem;
+    height: 11.6rem;
+    left: 0;
+    bottom: 0;
+    background-image: url(../../asset/image/footer_01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq(tb) {
+        max-width: 29.7rem;
+        // height: 16.7rem;
+    }
+
+    @include mq(pg) {
+        max-width: 297px;
+        // height: 167px;
+    }
+}
+
+.footer__inner::after {
+    content: '';
+    position: absolute;
+    width: 16.5rem;
+    height: 11.3rem;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../asset/image/footer_02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq(tb) {
+        max-width: 29.7rem;
+        // height: 16.7rem;
+    }
+
+    @include mq(pg) {
+        width: 297px;
+        // height: 167px;
+    }
+}
+
+.footer__logo-cow {
+    width: 9.6rem;
+    margin: 0 auto;
+
+    @include mq(pg) {
+        width: 96px;
+    }
+}
+
+.footer__logo-ja {
+    width: 27.5rem;
+    margin: 2.2rem auto 0;
+
+    @include mq(pg) {
+        width: 275px;
+        margin: 22px auto 0;
+    }
+}
+
+.footer__logo-en {
+    width: 14.2rem;
+    margin: 1.1rem auto 0;
+    height: 1.1rem;
+
+    @include mq(pg) {
+        width: 142px;
+        margin: 11px auto 0;
+        height: 11px;
+    }
+}
+
+.footer__nav {
+    margin-top: 2rem;
+    padding-bottom: 6rem;
+    text-align: center;
+
+    @include mq(tb) {
+        margin-top: 5rem;
+        padding-bottom: 9.7rem;
+        display: flex;
+        justify-content: center;
+        gap: 2.4rem;
+    }
+
+    @include mq(pg) {
+        margin-top: 50px;
+        padding-bottom: 97px;
+        gap: 24px;
+    }
+}
+
+.footer__nav-list {
+    margin-top: 6px;
+
+    @include mq(tb) {
+        margin-top: 0;
+    }
+}
+
+.footer__nav-list:first-child {
+    margin-top: 0;
+}
+
+.footer__nav-list a {
+    font-size: 14px;
+    line-height: 1.8;
+
+    @include mq(tb) {
+        line-height: 1.2;
+    }
+
+    @include mq(pg) {
+        font-size: 16px;
+    }
+}
+.footer__nav-list a:hover {
+    background:rgba(254, 217, 102, .5);
+    border-radius: 20px;
+}
+
+.copyright {
+    background-color: $copyright;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.copyright__text {
+    font-size: 12px;
+}
+
 
 
 // --- フッター ここまで ---

@@ -187,6 +187,11 @@
     font-size: 14px;
 }
 
+.hamburger__menu-list a:hover {
+    background:rgba(254, 217, 102, .5);
+    border-radius: 20px;
+}
+
 #js-top-nav.open {
     right: 0;
 }
@@ -313,11 +318,11 @@
 .pc__nav-left {
     @include mq(pc) {
         display: flex;
-        gap: 3.9rem;
+        gap: 3rem;
     }
 
     @include mq(pg) {
-        gap: 39px;
+        gap: 30px;
     }
 }
 
@@ -336,10 +341,14 @@
         font-size: 1.6rem;
     }
 
-
     @include mq(pg) {
         font-size: 16px;
     }
+}
+
+.pc__nav-list a:hover {
+    background:rgba(254, 217, 102, .5);
+    border-radius: 20px;
 }
 
 .pc__logo-name {
@@ -382,11 +391,11 @@
 .pc__nav-right {
     @include mq(pc) {
         display: flex;
-        gap: 3.9rem;
+        gap: 3rem;
     }
 
     @include mq(pg) {
-        gap: 39px;
+        gap: 30px;
     }
 }
 

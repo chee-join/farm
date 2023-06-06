@@ -22,14 +22,14 @@
     margin: 6rem auto 0;
 
     @include mq(tb) {
-        width: 93.4rem;
+        max-width: 93.4rem;
         margin: 9rem auto 0;
         display: flex;
         justify-content: center;
     }
 
     @include mq(pg) {
-        width: 934px;
+        max-width: 934px;
         margin: 90px auto 0;
     }
 }

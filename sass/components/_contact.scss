@@ -54,11 +54,15 @@ textarea {
     padding: 37px 16px 14px;
 
     @include mq(tb) {
-        margin-top: 9.3rem;
+        margin: 9.3rem auto 0;
+        padding: 3.7rem 7.6rem 1.4rem;
+        max-width: 74rem;
     }
 
     @include mq(pg) {
-        margin-top: 93px;
+        margin: 93px auto 0;
+        padding: 37px 76px 14px;
+        max-width: 740px;
     }
 }
 
@@ -68,19 +72,11 @@ textarea {
     margin-bottom: 30px;
 
     @include mq(tb) {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     @include mq(pg) {
-        font-size: 16px;
-    }
-}
-
-.form__item {
-    @include mq(tb) {}
-
-    @include mq(pg) {
-        margin-top: 24px;
+        font-size: 18px;
     }
 }
 
@@ -89,6 +85,7 @@ textarea {
 
     @include mq(tb) {
         margin-top: 2.4rem;
+        display: flex;
     }
 
     @include mq(pg) {
@@ -105,10 +102,12 @@ textarea {
 
     @include mq(tb) {
         font-size: 1.6rem;
+        width: 25.4rem;
     }
 
     @include mq(pg) {
         font-size: 16px;
+        width: 254px;
     }
 }
 
@@ -135,19 +134,16 @@ textarea {
     margin-top: 10px;
     padding-left: 20px;
 
-    @include mq(tb) {}
+    @include mq(tb) {
+        margin-top: 0;
+        padding-left: 0;
+    }
 
-    @include mq(pg) {}
 }
 
 .inquiry__list {
     margin-top: 5px;
     font-size: 14px;
-
-    @include mq(tb) {}
-
-    @include mq(pg) {}
-
 }
 
 .inquiry__list:first-child {
@@ -162,19 +158,12 @@ textarea {
     border-radius: 50%;
     /*上下の位置調整*/
     vertical-align: -4px;
-
-    @include mq(tb) {}
-
-    @include mq(pg) {}
-
 }
 
 .radio__btn:checked {
-
     background-color: #fff;
     border: 6px solid #4E301B;
     box-shadow: 0 0 0 1px #fff;
-
 }
 
 .radio__btn:hover,
@@ -185,10 +174,14 @@ textarea {
 .form__input {
     margin-top: 8px;
 
-    @include mq(tb) {}
+    @include mq(tb) {
+        margin-top: 0;
+        width: 33.4rem;
+    }
 
-    @include mq(pg) {}
-
+    @include mq(pg) {
+        width: 334px;
+    }
 }
 
 .text__box-01,
@@ -199,33 +192,24 @@ textarea {
     padding: 10px;
     font-size: 16px;
     font-weight: 400;
-
-    @include mq(tb) {}
-
-    @include mq(pg) {}
-
 }
 
 .text__box-02 {
     width: 50%;
-
-    @include mq(tb) {}
-
-    @include mq(pg) {}
-
 }
 
 .textarea {
     line-height: 1.8;
-    height: 12em;
-
-    @include mq(tb) {}
-
-    @include mq(pg) {}
+    height: 10.65em;
 }
 
 .submit__wrapper {
-    margin-top: 4rem;
+    text-align: center;
+}
+
+.submit__inner {
+    margin: 4rem auto 0;
+    display: inline-block;
 
     @include mq(tb) {
         margin-top: 5rem;
@@ -237,14 +221,30 @@ textarea {
 
 }
 
-.submit__btn {
+/*送信ボタン*/
+input[type="submit"] {
     font-size: 14px;
-    padding: 13px;
-    @include mq(tb) {}
+    color: #4E301B;
+    padding: 13px 63px;
+    background-color: $yellow;
+    border-radius: 8px;
+    cursor: pointer;
 
-    @include mq(pg) {}
+    @include mq(pg) {
+        font-size: 14px;
+        padding: 13px 93px;
+    }
 }
 
+/*送信ボタンhover*/
+input[type="submit"]:hover {
+    opacity: .7;
+}
 
+/*送信ボタン押せないとき*/
+input[type="submit"][disabled] {
+    background: #EFEAE6;
+    cursor: default;
+}
 
 // --- お問い合わせ ここまで ---

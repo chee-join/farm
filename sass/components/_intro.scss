@@ -14,13 +14,14 @@
     margin-left: auto;
 
     @include mq(tb) {
-        width: 76.8rem;
+        width: auto;
+        max-width: 76.8rem;
         border-radius: 15rem;
         margin-left: auto;
     }
 
     @include mq(pg) {
-        width: 768px;
+        max-width: 768px;
         border-radius: 150px;
         margin-left: auto;
     }
