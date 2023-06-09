@@ -198,10 +198,17 @@ textarea {
     width: 50%;
 }
 
+
 .textarea {
     line-height: 1.8;
     height: 10.65em;
 }
+
+.error_text {
+    display: none;
+}
+
+
 
 .submit__wrapper {
     text-align: center;

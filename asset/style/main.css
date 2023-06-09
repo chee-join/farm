@@ -92,6 +92,27 @@ a {
   }
 }
 
+.loader-bg {
+  background-color: #FDF9EF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  /*横幅いっぱい*/
+  height: 100vh;
+  /*縦幅いっぱい*/
+  position: fixed;
+  /*コンテンツを見えないようにする*/
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.loader {
+  width: 96px;
+  height: 96px;
+}
+
 /*スマホ・タブレット ヘッダー*/
 .header {
   width: 100%;
@@ -1236,6 +1257,10 @@ textarea {
 .textarea {
   line-height: 1.8;
   height: 10.65em;
+}
+
+.error_text {
+  display: none;
 }
 
 .submit__wrapper {

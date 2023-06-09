@@ -1,3 +1,18 @@
+/*ローディング*/
+//ページの読み込み完了時にローディング画面をフェードアウト
+$(window).on('load', function () {
+    $('.js-loader').delay(800).fadeOut(600);//画像をフェードアウト
+    $('.js-loader-bg').delay(1300).fadeOut(600);//背景色をフェードアウト
+});
+
+//ページの読み込みが完了しなくても5秒たったら強制的にローディング画面をフェードアウト
+setTimeout('stoploading()', 5000);
+function stoploading() {
+    $('.js-loader-bg').fadeOut(600);
+}
+
+
+/*ハンバーガーメニュー*/
 $(function () {
     $(".hamburger-circle").on('click', function () {
 
@@ -43,26 +58,24 @@ $(function () {
 
 /*問い合わせフォーム*/
 $(document).ready(function () {
-    const $submitBtn = $('#submit__btn');
+    console.log('問い合わせフォーム開始');
 
-    $('#form input,#form textarea').on('change', function () {
-        console.log('change');
-
+    const $submitBtn = $('#submit__btn')
+    $('#contact_form input,#contact_form textarea').on('change', function () {
+        if ($('#contact_form input[type="text"]').val() !== "" &&
+            $('#contact_form input[type="email"]').val() !== "" &&
+            $('#contact_form textarea"]').val() !== "" &&
+            $('#contact_form input[type="radio"]:checked').val() === true
+        ) {
+            $submitBtn.prop('disabled', false);
+        } else {
+            $submitBtn.prop('disabled', true);
+        }
     });
-
 });
 
-// if (
-//     $('#form input[type="radio"]').val() !== "" &&
-//     $('#form input[type="text"]').val() !== "" &&
-//     $('#form input[type="email"]').val() === true
 
-// ) {
-//     $submitBtn.prop('disabled', false);
 
-// } else {
-//     $submitBtn.prop('disabled', true);
-// }
 
 /*スムーススクロール*/
 $(function () {
@@ -76,5 +89,6 @@ $(function () {
     });
 });
 
-/*ローディング*/
+
+
 
