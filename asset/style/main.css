@@ -120,7 +120,7 @@ a {
 
 .sp__header {
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 @media only screen and (min-width: 768px) {
   .sp__header {
@@ -450,6 +450,7 @@ a {
 
 @media only screen and (min-width: 768px) {
   .pc__nav-list a {
+    display: block;
     font-size: 1.6rem;
   }
 }
@@ -653,8 +654,6 @@ a {
   background-color: #FDF9EF;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  position: relative;
-  z-index: -3;
 }
 @media only screen and (min-width: 768px) {
   .product {
@@ -685,7 +684,6 @@ a {
 
 .swiper {
   width: 100%;
-  z-index: -1;
 }
 
 .swiper-slide {
@@ -693,6 +691,9 @@ a {
 }
 
 .swiper__inner {
+  display: block;
+  width: 100%;
+  height: 100%;
   background: #FFFFFF;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   margin-bottom: 6px;
@@ -916,6 +917,7 @@ a {
   display: flex;
   align-items: center;
   margin-top: 3.1rem;
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
   .faq__q {

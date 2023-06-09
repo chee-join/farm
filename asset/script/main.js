@@ -39,6 +39,9 @@ const swiper = new Swiper(".swiper", {
     },
     speed: 500,
     grabCursor: true,
+    mousewheel: {
+        forceToAxis: true,
+      },
     breakpoints: {
         768: {
             slidesPerView: 'auto',
