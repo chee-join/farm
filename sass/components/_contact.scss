@@ -20,11 +20,11 @@ textarea {
     padding-bottom: 3rem;
 
     @include mq(tb) {
-        padding-top: 10.4rem;
+        padding-top: 10.7rem;
     }
 
     @include mq(pg) {
-        padding-top: 104px;
+        padding-top: 107px;
         padding-bottom: 30px;
     }
 }
@@ -56,13 +56,13 @@ textarea {
 
     @include mq(tb) {
         margin: 9.3rem auto 0;
-        padding: 3.7rem 7.6rem 1.4rem;
+        padding: 4rem 7.6rem 4.4rem;
         max-width: 74rem;
     }
 
     @include mq(pg) {
         margin: 93px auto 0;
-        padding: 37px 76px 14px;
+        padding: 40px 76px 44px;
         max-width: 740px;
     }
 }
@@ -70,14 +70,17 @@ textarea {
 .form__title {
     font-size: 16px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
+
 
     @include mq(tb) {
         font-size: 1.8rem;
+        margin-bottom: 4.1rem;
     }
 
     @include mq(pg) {
         font-size: 18px;
+        margin-bottom: 41px;
     }
 }
 
@@ -85,12 +88,12 @@ textarea {
     margin-top: 32px;
 
     @include mq(tb) {
-        margin-top: 2.4rem;
+        margin-top: 3.1rem;
         display: flex;
     }
 
     @include mq(pg) {
-        margin-top: 24px;
+        margin-top: 31px;
     }
 }
 
@@ -100,6 +103,7 @@ textarea {
 
 .form__label {
     font-size: 14px;
+    display: block;
 
     @include mq(tb) {
         font-size: 1.6rem;
@@ -117,17 +121,21 @@ textarea {
     border-radius: 8px;
     padding: 3px 6px;
     font-size: 12px;
+    display: inline-block;
+    margin-left: 1.6rem;
 
     @include mq(tb) {
         border-radius: 1rem;
         padding: .5rem 1.1rem;
         font-size: 1.4rem;
+        margin-left: 1.6rem;
     }
 
     @include mq(pg) {
         border-radius: 10px;
         padding: 5px 11px;
         font-size: 14px;
+        margin-left: 16px;
     }
 }
 
@@ -143,8 +151,9 @@ textarea {
 }
 
 .inquiry__list {
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 14px;
+    letter-spacing: .15em;
 }
 
 .inquiry__list:first-child {
@@ -159,6 +168,7 @@ textarea {
     border-radius: 50%;
     /*上下の位置調整*/
     vertical-align: -4px;
+    margin-right: 5px;
 }
 
 .radio__btn:checked {
@@ -176,12 +186,13 @@ textarea {
     margin-top: 8px;
 
     @include mq(tb) {
-        margin-top: 0;
+        margin-top: -1.1rem;
         width: 33.4rem;
     }
 
     @include mq(pg) {
         width: 334px;
+        margin-top: -11px;
     }
 }
 
@@ -209,8 +220,6 @@ textarea {
     display: none;
 }
 
-
-
 .submit__wrapper {
     text-align: center;
 }
@@ -220,11 +229,11 @@ textarea {
     display: inline-block;
 
     @include mq(tb) {
-        margin-top: 5rem;
+        margin-top: 4.6rem;
     }
 
     @include mq(pg) {
-        margin-top: 50px;
+        margin-top: 46px;
     }
 
 }

@@ -31,7 +31,7 @@ $(function () {
 const swiper = new Swiper(".swiper", {
     loop: true,
     centeredSlides: true,
-    slidesPerView: 1.5,
+    slidesPerView: 'auto',
     spaceBetween: 24,
     autoplay: {
         delay: 3000,
@@ -56,38 +56,33 @@ $(function () {
     });
 });
 
-/*問い合わせフォーム*/
+
 $(document).ready(function () {
     const $submitBtn = $('#submit__btn')
     $('#contact_form input,#contact_form #message').on('change', function () {
         if ($('#contact_form input[type="text"]').val() !== "" &&
             $('#contact_form input[type="email"]').val() !== "" &&
-            $('#message').val() !== "" &&
-            $('#contact_form input[type="radio"]:checked').val() === true
+            $('#contact_form input[type="radio"]:checked').val() !== "" &&
+            $('#message').val() !== ""
         ) {
             $submitBtn.prop('disabled', false);
         } else {
             $submitBtn.prop('disabled', true);
         }
     });
+
+    $('#message').on('keydown keyup keypress change focus blur', function() {
+        if (jQuery(this).val() == "") {
+        jQuery(this).css({
+        backgroundColor: '#EFEAE6' /* 未入力時の背景色 */
+        });
+        } else {
+        jQuery(this).css({
+        backgroundColor: '#e8f0fe'/* 入力済みの背景色 */
+        });
+        }
+        }).change();
 });
-
-
-
-// $(document).ready(function () {
-//     const $submitBtn = $('#submit__btn')
-//     $('#contact_form input,#contact_form #message').on('change', function () {
-//         if ($('#contact_form input[type="email"]').val() !== "") {
-//             $submitBtn.prop('disabled', false);
-//         } else {
-//             $submitBtn.prop('disabled', true);
-//         }
-//     });
-// });
-
-
-
-
 
 /*スムーススクロール*/
 $(function () {

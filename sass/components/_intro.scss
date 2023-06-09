@@ -15,24 +15,30 @@
 
     @include mq(tb) {
         width: auto;
-        max-width: 76.8rem;
+        max-width: 79rem;
         border-radius: 15rem;
         margin-left: auto;
     }
 
     @include mq(pg) {
-        max-width: 768px;
+        max-width: 790px;
         border-radius: 150px;
         margin-left: auto;
     }
 }
 
 .intro__wrapper {
+
+    @include mq(tb) {
+        padding-right: 1rem;
+        padding-left: 13.8rem;
+        margin: .6rem auto 0;
+    }
+
     @include mq(pg) {
-        max-width: 1280px;
-        padding-right: 43px;
-        padding-left: 178px;
-        margin: 0 auto;
+        padding-right: 10px;
+        padding-left: 138px;
+        margin: 6px auto 0;
     }
 }
 
@@ -60,16 +66,15 @@
 
     @include mq(tb) {
         font-size: 4rem;
-        margin-top: 0;
+        margin-top: -.9rem;
+        padding: 1.7rem 1rem 2rem;
     }
 
     @include mq(pg) {
         font-size: 40px;
+        margin-top: -9px;
+        padding: 17px 10px 20px;
     }
-}
-
-.intro__heading span:first-child {
-    margin-top: 0;
 }
 
 .intro_desc {
@@ -88,14 +93,14 @@
         font-size: 1.6rem;
         line-height: calc(40 / 16);
         padding: 1.5rem;
-        margin-top: 3.7rem;
+        margin-top: 2.7rem;
     }
 
     @include mq(pg) {
         width: 526px;
         font-size: 16px;
         padding: 15px;
-        margin-top: 37px;
+        margin-top: 27px;
     }
 }
 
@@ -108,14 +113,14 @@
 
     @include mq(tb) {
         width: 39.3rem;
-        margin-top: -19.8rem;
+        margin-top: -18.8rem;
     }
 
     @include mq(pg) {
         border-radius: 50px;
         width: 393px;
         margin-left: auto;
-        margin-top: -198px;
+        margin-top: -188px;
     }
 }
 

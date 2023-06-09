@@ -28,6 +28,7 @@
     background-image: url(../../asset/image/grapes.png);
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 1;
 
     @include mq(tb) {
         width: 23.5rem;
@@ -43,10 +44,10 @@
 }
 
 .info__wrapper {
-    padding-top: 4rem;
+    padding-top: 9.2rem;
 
     @include mq(pg) {
-        padding-top: 40px;
+        padding-top: 92px;
     }
 }
 
@@ -61,8 +62,8 @@
 
     @include mq(tb) {
         max-width: 93.4rem;
-        padding-top: 2.2rem;
-        padding-bottom: 2.2rem;
+        padding-top: 1.8rem;
+        padding-bottom: 1.9rem;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -71,8 +72,8 @@
 
     @include mq(pg) {
         max-width: 934px;
-        padding-top: 22px;
-        padding-bottom: 22px;
+        padding-top: 18px;
+        padding-bottom: 19px;
         gap: 120px;
     }
 }

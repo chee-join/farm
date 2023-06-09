@@ -22,14 +22,22 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include mq(tb) {
-        max-width: 29.7rem;
-        // height: 16.7rem;
+    @include mq(pc) {
+        width: 19.6rem;
+        height: 13.3rem;
+        left: -.7rem;
+    }
+
+    @include mq(pc) {
+        width: 24.6rem;
+        height: 16.7rem;
+        left: -.7rem;
     }
 
     @include mq(pg) {
-        max-width: 297px;
-        // height: 167px;
+        width: 246px;
+        height: 167px;
+        left: -7px;
     }
 }
 
@@ -43,15 +51,16 @@
     background-image: url(../../asset/image/footer_02.png);
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 
     @include mq(tb) {
-        max-width: 29.7rem;
-        // height: 16.7rem;
+        max-width: 24.4rem;
+        margin-bottom: -1.5px;
     }
 
     @include mq(pg) {
-        width: 297px;
-        // height: 167px;
+        width: 244px;
+        margin-bottom: -15px;
     }
 }
 
@@ -92,7 +101,7 @@
     text-align: center;
 
     @include mq(tb) {
-        margin-top: 5rem;
+        margin-top: 3.9rem;
         padding-bottom: 9.7rem;
         display: flex;
         justify-content: center;
@@ -100,7 +109,7 @@
     }
 
     @include mq(pg) {
-        margin-top: 50px;
+        margin-top: 39px;
         padding-bottom: 97px;
         gap: 24px;
     }
@@ -130,8 +139,9 @@
         font-size: 16px;
     }
 }
+
 .footer__nav-list a:hover {
-    background:rgba(254, 217, 102, .5);
+    background: rgba(254, 217, 102, .5);
     border-radius: 20px;
 }
 

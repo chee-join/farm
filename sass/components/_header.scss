@@ -188,7 +188,7 @@
 }
 
 .hamburger__menu-list a:hover {
-    background:rgba(254, 217, 102, .5);
+    background: rgba(254, 217, 102, .5);
     border-radius: 20px;
 }
 
@@ -234,18 +234,21 @@
 .pc__header-heading span {
     @include mq(tb) {
         writing-mode: vertical-rl;
+        vertical-align: top;
         font-size: 3.2rem;
         line-height: 1;
         display: inline-block;
         background-color: #fff;
-        letter-spacing: .42em;
-        padding: 1rem 1.5rem .5rem;
+        letter-spacing: 0.5em;
+        padding: .5rem 1.5rem 0;
+        margin-left: 1rem;
     }
 
     @include mq(pg) {
         font-size: 32px;
         display: inline-block;
-        padding: 10px 15px 5px;
+        padding: 5px 15px 0px;
+        margin-left: 10px;
     }
 }
 
@@ -272,12 +275,12 @@
         padding: 2.9rem;
         background-color: $main_bg;
         border-radius: 50%;
-        margin-top: -8rem;
+        margin-top: -7.5rem;
     }
 
     @include mq(pg) {
         padding: 29px;
-        margin-top: -80px;
+        margin-top: -75px;
     }
 }
 
@@ -347,7 +350,7 @@
 }
 
 .pc__nav-list a:hover {
-    background:rgba(254, 217, 102, .5);
+    background: rgba(254, 217, 102, .5);
     border-radius: 20px;
 }
 
@@ -377,9 +380,9 @@
 
 .pc__logo-en {
     @include mq(tb) {
-        display: inline-block;
+        display: block;
         width: 14.2rem;
-        margin-top: 1.1rem;
+        margin: 1.1rem auto 0;
     }
 
     @include mq(pg) {

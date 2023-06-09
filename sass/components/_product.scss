@@ -10,12 +10,12 @@
     z-index: -3;
 
     @include mq(tb) {
-        padding-top: 6rem;
+        padding-top: 13.1rem;
         padding-bottom: 8.8rem;
     }
 
     @include mq(pg) {
-        padding-top: 60px;
+        padding-top: 131px;
         padding-bottom: 88px;
     }
 }
