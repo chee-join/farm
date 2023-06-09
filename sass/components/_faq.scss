@@ -6,6 +6,7 @@
     background-color: $main_bg;
     padding-top: 6rem;
     padding-bottom: 6rem;
+    position: relative;
 
     @include mq(tb) {
         padding-top: 9.1rem;
@@ -15,6 +16,30 @@
     @include mq(pg) {
         padding-top: 91px;
         padding-bottom: 91px;
+    }
+}
+
+.faq::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12rem;
+    width: 27.9rem;
+    height: 15.7rem;
+    background-image: url(../../asset/image/breakfast.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include mq(tb) {
+        width: 34.9rem;
+        height: 19.7rem;
+        bottom: -12.2rem;
+    }
+
+    @include mq(pg) {
+        width: 349px;
+        height: 197px;
+        bottom: -122px;
     }
 }
 

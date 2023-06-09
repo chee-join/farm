@@ -19,7 +19,6 @@ textarea {
     padding-top: 6rem;
     padding-bottom: 3rem;
 
-
     @include mq(tb) {
         padding-top: 10.4rem;
     }
@@ -29,6 +28,8 @@ textarea {
         padding-bottom: 30px;
     }
 }
+
+
 
 .contact__lead {
     margin-top: 4rem;

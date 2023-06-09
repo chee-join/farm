@@ -5,6 +5,7 @@
     width: 100%;
     padding-top: 6rem;
     padding-bottom: 6rem;
+    position: relative;
 
     @include mq(tb) {
         padding-top: 9rem;
@@ -15,6 +16,31 @@
         padding-top: 90px;
         padding-bottom: 78px;
     }
+}
+
+.access::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12rem;
+    width: 27.9rem;
+    height: 15.7rem;
+    background-image: url(../../asset/image/brussels_sprouts.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include mq(tb) {
+        width: 34.9rem;
+        height: 19.7rem;
+        bottom: -12.2rem;
+    }
+
+    @include mq(pg) {
+        width: 349px;
+        height: 197px;
+        bottom: -122px;
+    }
+
 }
 
 .access__wrapper {

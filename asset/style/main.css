@@ -733,6 +733,7 @@ a {
   width: 100%;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .info {
@@ -744,6 +745,32 @@ a {
   .info {
     padding-top: 90px;
     padding-bottom: 90px;
+  }
+}
+
+.info::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -7rem;
+  width: 18.8rem;
+  height: 12.5rem;
+  background-image: url(../../asset/image/grapes.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 768px) {
+  .info::after {
+    width: 23.5rem;
+    height: 15.7rem;
+    bottom: -8.2rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .info::after {
+    width: 235px;
+    height: 157px;
+    bottom: -82px;
   }
 }
 
@@ -801,6 +828,7 @@ a {
   background-color: #FDF9EF;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .faq {
@@ -812,6 +840,32 @@ a {
   .faq {
     padding-top: 91px;
     padding-bottom: 91px;
+  }
+}
+
+.faq::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12rem;
+  width: 27.9rem;
+  height: 15.7rem;
+  background-image: url(../../asset/image/breakfast.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 768px) {
+  .faq::after {
+    width: 34.9rem;
+    height: 19.7rem;
+    bottom: -12.2rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .faq::after {
+    width: 349px;
+    height: 197px;
+    bottom: -122px;
   }
 }
 
@@ -920,6 +974,7 @@ a {
   width: 100%;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .access {
@@ -931,6 +986,32 @@ a {
   .access {
     padding-top: 90px;
     padding-bottom: 78px;
+  }
+}
+
+.access::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12rem;
+  width: 27.9rem;
+  height: 15.7rem;
+  background-image: url(../../asset/image/brussels_sprouts.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 768px) {
+  .access::after {
+    width: 34.9rem;
+    height: 19.7rem;
+    bottom: -12.2rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .access::after {
+    width: 349px;
+    height: 197px;
+    bottom: -122px;
   }
 }
 

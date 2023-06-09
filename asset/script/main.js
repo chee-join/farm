@@ -58,13 +58,11 @@ $(function () {
 
 /*問い合わせフォーム*/
 $(document).ready(function () {
-    console.log('問い合わせフォーム開始');
-
     const $submitBtn = $('#submit__btn')
-    $('#contact_form input,#contact_form textarea').on('change', function () {
+    $('#contact_form input,#contact_form #message').on('change', function () {
         if ($('#contact_form input[type="text"]').val() !== "" &&
             $('#contact_form input[type="email"]').val() !== "" &&
-            $('#contact_form textarea"]').val() !== "" &&
+            $('#message').val() !== "" &&
             $('#contact_form input[type="radio"]:checked').val() === true
         ) {
             $submitBtn.prop('disabled', false);
@@ -73,6 +71,20 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+// $(document).ready(function () {
+//     const $submitBtn = $('#submit__btn')
+//     $('#contact_form input,#contact_form #message').on('change', function () {
+//         if ($('#contact_form input[type="email"]').val() !== "") {
+//             $submitBtn.prop('disabled', false);
+//         } else {
+//             $submitBtn.prop('disabled', true);
+//         }
+//     });
+// });
+
 
 
 

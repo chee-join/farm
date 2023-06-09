@@ -5,6 +5,7 @@
     width: 100%;
     padding-top: 6rem;
     padding-bottom: 6rem;
+    position: relative;
 
     @include mq(tb) {
         padding-top: 9rem;
@@ -14,6 +15,30 @@
     @include mq(pg) {
         padding-top: 90px;
         padding-bottom: 90px;
+    }
+}
+
+.info::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -7rem;
+    width: 18.8rem;
+    height: 12.5rem;
+    background-image: url(../../asset/image/grapes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include mq(tb) {
+        width: 23.5rem;
+        height: 15.7rem;
+        bottom: -8.2rem;
+    }
+
+    @include mq(pg) {
+        width: 235px;
+        height: 157px;
+        bottom: -82px;
     }
 }
 
