@@ -577,7 +577,7 @@ a {
 .intro__heading span {
   font-size: 2.8rem;
   color: #35A1C3;
-  line-height: 1;
+  line-height: 1.45;
   display: inline-block;
   padding: 0.7rem;
   background: rgba(255, 255, 255, 0.9);
@@ -603,11 +603,11 @@ a {
 }
 
 .intro_desc {
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: clamp(13px, 3.5vw, 14px);
+  line-height: 2.5;
   color: #857868;
   width: 50rem;
-  padding: 10px 0 10px 10px;
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.9);
   position: relative;
   margin-top: 20px;
@@ -618,8 +618,6 @@ a {
   .intro_desc {
     width: 52.6rem;
     font-size: 1.6rem;
-    line-height: 2.5;
-    padding: 1.5rem;
     margin-top: 2.7rem;
     margin-right: auto;
     margin-left: 0;
@@ -1178,6 +1176,7 @@ textarea {
   margin-top: 4rem;
   font-size: 16px;
   text-align: center;
+  line-height: 1.4;
 }
 @media only screen and (min-width: 768px) {
   .contact__lead {
@@ -1214,9 +1213,9 @@ textarea {
 }
 
 .form__title {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
 }
 @media only screen and (min-width: 768px) {
   .form__title {
@@ -1251,7 +1250,7 @@ textarea {
 }
 
 .form__label {
-  font-size: 14px;
+  font-size: 16px;
   display: block;
 }
 @media only screen and (min-width: 768px) {
@@ -1305,7 +1304,7 @@ textarea {
 
 .inquiry__list {
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.15em;
 }
 

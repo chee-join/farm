@@ -29,12 +29,11 @@ textarea {
     }
 }
 
-
-
 .contact__lead {
     margin-top: 4rem;
     font-size: 16px;
     text-align: center;
+    line-height: 1.4;
 
     @include mq(tb) {
         margin-top: 6.7rem;
@@ -45,7 +44,6 @@ textarea {
         margin-top: 67px;
         font-size: 18px;
     }
-
 }
 
 .form__wrapper {
@@ -68,10 +66,9 @@ textarea {
 }
 
 .form__title {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-    margin-bottom: 3rem;
-
+    margin-bottom: 30px;
 
     @include mq(tb) {
         font-size: 1.8rem;
@@ -102,7 +99,7 @@ textarea {
 }
 
 .form__label {
-    font-size: 14px;
+    font-size: 16px;
     display: block;
 
     @include mq(tb) {
@@ -147,12 +144,11 @@ textarea {
         margin-top: 0;
         padding-left: 0;
     }
-
 }
 
 .inquiry__list {
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: .15em;
 }
 
@@ -210,7 +206,6 @@ textarea {
     width: 50%;
 }
 
-
 .textarea {
     line-height: 1.8;
     height: 10.65em;
@@ -235,7 +230,6 @@ textarea {
     @include mq(pg) {
         margin-top: 46px;
     }
-
 }
 
 /*送信ボタン*/

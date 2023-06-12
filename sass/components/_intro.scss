@@ -52,13 +52,12 @@
     @include mq(pg) {
         margin-top: -455px;
     }
-
 }
 
 .intro__heading span {
     font-size: 2.8rem;
     color: $heading_h2;
-    line-height: 1;
+    line-height: 1.45;
     display: inline-block;
     padding: .7rem;
     background: rgba(255, 255, 255, 0.9);
@@ -82,11 +81,11 @@
 }
 
 .intro_desc {
-    font-size: 14px;
-    line-height: 1.8;
+    font-size: clamp(13px, 3.5vw, 14px);
+    line-height: 2.5;
     color: #857868;
     width: 50rem;
-    padding: 10px 0 10px 10px;
+    padding: 1.5rem;
     background: rgba(255, 255, 255, 0.9);
     position: relative;
     margin-top: 20px;
@@ -96,8 +95,6 @@
     @include mq(tb) {
         width: 52.6rem;
         font-size: 1.6rem;
-        line-height: calc(40 / 16);
-        padding: 1.5rem;
         margin-top: 2.7rem;
         margin-right: auto;
         margin-left: 0;
