@@ -33,14 +33,6 @@ a {
 
 
 // --- 表示・非表示切り替え ---
-.pc_only {
-    display: none;
-
-    @include mq(tb) {
-        display: inline-block;
-    }
-}
-
 .sp_only {
     display: inline-block;
 

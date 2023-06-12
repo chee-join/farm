@@ -55,15 +55,6 @@ a {
   cursor: pointer;
 }
 
-.pc_only {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .pc_only {
-    display: inline-block;
-  }
-}
-
 .sp_only {
   display: inline-block;
 }
@@ -1366,10 +1357,6 @@ textarea {
 .textarea {
   line-height: 1.8;
   height: 10.65em;
-}
-
-.error_text {
-  display: none;
 }
 
 .submit__wrapper {
