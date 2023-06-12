@@ -30,15 +30,11 @@
 .intro__wrapper {
 
     @include mq(tb) {
-        // padding-right: 1rem;
-        // padding-left: 13.8rem;
         max-width: 105.9rem;
         margin: .6rem auto 0;
     }
 
     @include mq(pg) {
-        // padding-right: 10px;
-        // padding-left: 138px;
         max-width: 1059px;
         margin: 6px auto 0;
     }

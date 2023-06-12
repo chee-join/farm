@@ -74,7 +74,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#message').on('keydown keyup keypress change focus blur', function() {
+    $('#message,#address_text').on('keydown keyup keypress change focus blur', function() {
         if (jQuery(this).val() == "") {
         jQuery(this).css({
         backgroundColor: '#EFEAE6' /* 未入力時の背景色 */
