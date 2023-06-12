@@ -560,10 +560,12 @@ a {
 
 .intro__heading {
   margin-top: -25rem;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .intro__heading {
     margin-top: -45.5rem;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -580,12 +582,16 @@ a {
   padding: 0.7rem;
   background: rgba(255, 255, 255, 0.9);
   margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media only screen and (min-width: 768px) {
   .intro__heading span {
     font-size: 4rem;
     margin-top: -0.9rem;
     padding: 1.7rem 1rem 2rem;
+    margin-right: initial;
+    margin-left: initial;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -601,11 +607,12 @@ a {
   line-height: 1.8;
   color: #857868;
   width: 50rem;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0 10px 10px;
   background: rgba(255, 255, 255, 0.9);
   position: relative;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media only screen and (min-width: 768px) {
   .intro_desc {
@@ -614,6 +621,8 @@ a {
     line-height: 2.5;
     padding: 1.5rem;
     margin-top: 2.7rem;
+    margin-right: auto;
+    margin-left: 0;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -629,12 +638,12 @@ a {
   display: block;
   border-radius: 5rem;
   width: 100%;
-  margin-left: auto;
-  margin-top: -8rem;
+  margin-top: -25rem;
 }
 @media only screen and (min-width: 768px) {
   .intro__img02 {
     width: 39.3rem;
+    margin-left: auto;
     margin-top: -18.8rem;
   }
 }
