@@ -217,11 +217,27 @@
     }
 }
 
+.pc__heading-wrapper {
+    @include mq(tb) {
+        max-width: 98.8rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 11.2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    @include mq(pg) {
+        max-width: 988px;
+        padding-top: 112px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 .pc__header-heading {
     @include mq(tb) {
         text-align: right;
-        padding-top: 8.75%;
-        padding-right: 11.41%;
     }
 }
 

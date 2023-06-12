@@ -317,10 +317,27 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+  .pc__heading-wrapper {
+    max-width: 98.8rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 11.2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .pc__heading-wrapper {
+    max-width: 988px;
+    padding-top: 112px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .pc__header-heading {
     text-align: right;
-    padding-top: 8.75%;
-    padding-right: 11.41%;
   }
 }
 
@@ -1346,8 +1363,15 @@ textarea {
   background-color: #EFEAE6;
   border-radius: 5px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
+}
+@media only screen and (min-width: 768px) {
+  .text__box-01,
+  .text__box-02,
+  .textarea {
+    font-size: 16px;
+  }
 }
 
 .text__box-02 {

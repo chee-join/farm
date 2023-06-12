@@ -198,8 +198,12 @@ textarea {
     background-color: #EFEAE6;
     border-radius: 5px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+
+    @include mq(tb) {
+        font-size: 16px;
+    }
 }
 
 .text__box-02 {
