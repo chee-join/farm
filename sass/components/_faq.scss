@@ -97,9 +97,12 @@
 
 .faq__q-q {
     @include font-roboto;
-    font-size: 2.4rem;
+    font-size: 20px;
     display: inline-block;
     margin-right: 8px;
+    @include mq(tb) {
+        font-size: 2.4rem;
+    }
 
     @include mq(pg) {
         font-size: 24px;
