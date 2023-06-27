@@ -722,6 +722,7 @@ a {
 @media only screen and (min-width: 768px) {
   .swiper__text {
     min-height: 16.5rem;
+    padding: 1rem;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -742,7 +743,7 @@ a {
 }
 
 .swiper__price {
-  font-size: clamp(14px, 3.7vw, 16px);
+  font-size: clamp(12px, 3.5vw, 16px);
   font-weight: 400;
 }
 @media only screen and (min-width: 1280px) {
